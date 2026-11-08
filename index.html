@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jajan Kesayangan: kumpulan jajanan favorit dan resepnya.">
+  <title>Home | Jajan Kesayangan</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon-dapur.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten</a>
+
+  <!-- HEADER: gambar banner + logo + teks berjalan -->
+  <header class="site-header">
+    <img class="header-img" src="img/dapurjajan.png" alt="Ilustrasi klepon, cireng, dan pisang goreng" width="1400" height="240">
+    <div class="header-content">
+      <img src="img/logofix.png" alt="Logo Jajan Kesayangan" width="84" height="84">
+      <div><h1>Dapur Jajan</h1><p>Jajanan favorit dan resepnya, dari dapur ke hatimu.</p></div>
+    </div>
+  </header>
+  <div class="ticker" aria-hidden="true"><span>Selamat datang di Dapur Jajan! &nbsp;•&nbsp; Resep terbaru: Takoyaki Isi Sosis ala Rumahan dan Cilor Kenyal Bumbu Pedas &nbsp;•&nbsp; Daftar jadi Anggota Dapur dan bagikan resep jajan favoritmu &nbsp;•&nbsp; Jajan sehat, jajan hemat, jajan bahagia</span></div>
+
+  <!-- NAVIGASI -->
+  <nav class="navbar" aria-label="Menu utama">
+        <button class="nav-toggle" aria-expanded="false">&#9776; Menu</button>
+        <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li class="has-sub">
+                <a href="about.html" aria-haspopup="true">About &#9662;</a>
+                <ul class="submenu">
+                    <li><a href="about.html#profil">Profil</a></li>
+                    <li><a href="about.html#sejarah">Sejarah</a></li>
+                    <li><a href="about.html#visi-misi">Visi &amp; Misi</a></li>
+                    <li><a href="about.html#tujuan">Tujuan</a></li>
+                    <li><a href="about.html#struktur">Struktur Organisasi</a></li>
+                </ul>
+            </li>
+            <li class="has-sub">
+                <a href="resep.html" aria-haspopup="true">Resep &#9662;</a>
+                <ul class="submenu">
+                    <li><a href="resep-cireng.html">Cireng Kuah</a></li>
+                    <li><a href="resep-cilor.html">Cilor</a></li>
+                    <li><a href="resep-takoyaki.html">Takoyaki</a></li>
+                    <li><a href="resep-dimsum-mentai.html">Dimsum Mentai</a></li>
+                    <li><a href="resep-sempol.html">Sempol</a></li>
+                </ul>
+            </li>            
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+  <!-- MAIN BODY + SIDEBAR -->
+  <div class="layout">
+    <main id="konten">
+        <div class="slideshow" aria-label="Foto berjalan">
+        <figure class="slide"><img src="img/takoyakifiks.png" alt="Takoyaki" width="800" height="500"><figcaption>Takoyaki</figcaption></figure>
+        <figure class="slide"><img src="img/cilorfiks.png" alt="Cilor" width="800" height="500"><figcaption>Cilor Pedas</figcaption></figure>
+        <figure class="slide"><img src="img/dimsum.png" alt="Dimsum Mentai" width="800" height="500"><figcaption>Dimsum Mentai</figcaption></figure>
+        <figure class="slide"><img src="img/sempol.png" alt="Sempol" width="800" height="500"><figcaption>Sempol Ayam</figcaption></figure>
+        <figure class="slide"><img src="img/cirengkuah.png" alt="Cireng Kuah" width="800" height="500"><figcaption>Cireng Kuah</figcaption></figure>
+        <button class="slide-btn prev" aria-label="Sebelumnya">&#10094;</button>
+        <button class="slide-btn next" aria-label="Berikutnya">&#10095;</button>
+      </div>
+      <section class="panel">
+        <h2>Selamat Datang di Dapur Jajan</h2>
+        <p>Di sini aku mengumpulkan jajanan favoritku, lengkap dengan cerita dan resep yang bisa kamu coba sendiri di rumah.
+        Dari klepon yang meletus manis, cireng yang renyah, sampai pisang goreng hangat di sore hari.</p>
+        <p><strong>Pengumuman:</strong> pendaftaran Anggota Dapur gratis dan terbuka! Klik menu <a href="registration.html">Registration</a>.</p>
+      </section>
+      <h2 class="judul-halaman">Resep Terbaru</h2>
+      <article class="artikel-card">
+        <img src="img/takoyakifiks.png" alt="Takoyaki" width="800" height="500">
+        <div class="isi">
+            <h3><a href="resep-takoyaki.html">Takoyaki Isi Sosis ala Rumahan</a></h3>
+            <p class="meta">6 November 2026 &middot; Jajan Jepang</p>
+            <p>Bola-bola hangat dengan saus dan mayones, kenyal di dalam dan renyah di luar.</p>
+            <a class="btn" href="resep-takoyaki.html">Read More &raquo;</a>
+     </div>
+    </article>
+
+    <article class="artikel-card">
+        <img src="img/cilorfiks.png" alt="Cilor" width="800" height="500">
+        <div class="isi">
+            <h3><a href="resep-cilor.html">Cilor Kenyal Bumbu Pedas</a></h3>
+            <p class="meta">6 November 2026 &middot; Jajan Kaki Lima</p>
+            <p>Aci telur yang digoreng sebentar, ditusuk, lalu disiram bumbu pedas gurih.</p>
+            <a class="btn" href="resep-cilor.html">Read More &raquo;</a>
+        </div>
+    </article>
+    </main>
+
+<aside class="sidebar" aria-label="Sidebar">
+  <div class="widget"><h3>Jam Dapur</h3>
+    <div class="clock" id="jam">--:--:--</div>
+    <p class="muted" id="tanggal"></p></div>
+  <div class="widget profil"><h3>Pemilik Dapur</h3>
+    <img src="img/logo.svg" alt="Foto profil pemilik" width="96" height="96">
+    <p><strong>Nuha Ramadhani</strong></p>
+    <p class="muted">Penggemar jajanan kaki lima.</p></div>
+  <div class="widget">
+    <h3>Resep Terbaru</h3>
+    <ul>
+      <li><a href="resep-takoyaki.html">Takoyaki Isi Sosis ala Rumahan</a></li>
+      <li><a href="resep-cilor.html">Cilor Kenyal Bumbu Pedas</a></li>
+    </ul>
+  </div>
+  <div class="widget"><h3>Statistik Pengunjung</h3>
+    <p class="muted">Total kunjungan</p>
+    <p class="angka-besar" id="pengunjung" style="text-align:center;margin:0">1.250</p></div>
+</aside>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Dapur Jajan. Semua hak dilindungi.</p>
+    <p>Didesain oleh <strong>Nuha Ramadhani</strong> (12402051030054 / 5-B)</p>
+  </footer>
+  <button id="ke-atas" aria-label="Kembali ke atas">&uarr;</button>
+</body>
+</html>
